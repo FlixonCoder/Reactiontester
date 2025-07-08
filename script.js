@@ -25,10 +25,12 @@ function move() {
     shape.style.height = size + "px";
     shape.style.display = "block";
     shape.style.backgroundColor = getRandomColor();
+    shape.style.borderRadius = "0"; // ✅ always square
 
     // Record start time
     start = new Date().getTime();
 }
+
 move();
 document.getElementById("shape").onclick = function() {
   var end = new Date().getTime();
