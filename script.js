@@ -25,7 +25,6 @@ function move() {
     shape.style.height = size + "px";
     shape.style.display = "block";
     shape.style.backgroundColor = getRandomColor();
-    shape.style.borderRadius = Math.random() < 0.5 ? "50%" : "0"; // circle or square
 
     // Record start time
     start = new Date().getTime();
